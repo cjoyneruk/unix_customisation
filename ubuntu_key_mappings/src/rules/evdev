@@ -1,0 +1,5 @@
+! option = symbols
+  custom:swap_ctrl_cmd = +custom(swap_ctrl_cmd)
+  custom:swap_alt = +custom(swap_alt)
+
+! include %S/evdev
