@@ -53,7 +53,7 @@ vsource activate <venv>
 
 If it doesn't exists `vsource` will tell you so!
 
-*Note that you can deactivate a virtual environment as normal by using the command `deactivate*
+*Note that you can deactivate a virtual environment as normal by using the command `deactivate`*
 
 ### Listing
 
