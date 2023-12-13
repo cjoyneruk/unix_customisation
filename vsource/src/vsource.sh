@@ -65,8 +65,9 @@ function vsource() {
 		*) 
 			echo "Please use either"
 			echo "1. 'vsource create <venv>' to create a new virtual environment"
-			echo "2. 'vsource activate <venv>' to activate a virtual environment"
-			echo "3. 'vsource list' to view all environments"
+			echo "2. 'vsource remove <venv>' to remove a virtual environment"
+			echo "3. 'vsource activate <venv>' to activate a virtual environment"
+			echo "4. 'vsource list' to view all environments"
 			;;
 	esac
 
