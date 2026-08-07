@@ -107,8 +107,13 @@ getGitBranch()
 				fi
 
 				## Get timestamp
+				## NOTE: `stat` flags differ between GNU (Linux) and BSD (macOS)
 				if [ -d "$dot_git" -a -e "${dot_git}/FETCH_HEAD" ]; then
-					local git_last_update=$(stat -c "%Y" "${dot_git}/FETCH_HEAD")
+					if [[ "$OSTYPE" == "darwin"* ]]; then
+						local git_last_update=$(stat -f "%m" "${dot_git}/FETCH_HEAD")
+					else
+						local git_last_update=$(stat -c "%Y" "${dot_git}/FETCH_HEAD")
+					fi
 				fi
 
 				## Update if it's time to do so
